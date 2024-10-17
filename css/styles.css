@@ -1,53 +1,60 @@
-/* Grundlegendes Styling */
-body {
-    font-family: Arial, sans-serif;
+/* Hintergrundbild */
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    height: 100%;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
+.background {
+    background-image: url('images/picture2.jpg'); /* Hintergrundbild hinzufügen */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.centered-nav {
     text-align: center;
 }
 
-nav ul {
+.centered-nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.centered-nav ul li {
+    margin: 20px 0;
 }
 
-nav ul li a {
+/* Button-Styling */
+.centered-nav ul li a {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8); /* Schwarzer Hintergrund mit Transparenz */
     color: white;
     text-decoration: none;
-}
-
-h2 {
-    color: #333;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.gallery img {
-    width: 200px;
-    margin: 10px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid white;
     text-align: center;
-    padding: 10px 0;
+    transition: background-color 0.3s ease;
 }
+
+/* Hover-Effekt */
+.centered-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+/* Responsive Anpassung */
+@media (max-width: 768px) {
+    .centered-nav ul li a {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+}
+
+
