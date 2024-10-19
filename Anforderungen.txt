@@ -1,0 +1,15 @@
+
+Portfolio:
+
+Zeitstrahl -->  oben nach unten (Scollbar) Montag,Jahr Beschreibung unten --> von neu bis alt
+
+
+Produkte:
+Bild --> Hyperlink --> Email öffnen Vorgefertigter Text vereinfachung (Dokument ausfüllen --> Automatische E-Mail)
+Bild rüberhovern --> Beschreibung des Produktes anzeigen
+
+
+Kontakt:
+
+Insta, tiktok, E-mail + Text gegeben von ihnen
+

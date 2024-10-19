@@ -6,7 +6,7 @@ body, html {
 }
 
 .background {
-    background-image: url('images/picture2.jpg'); /* Hintergrundbild hinzufügen */
+    background-image: url('/images/Background1.jpeg'); /* Hintergrundbild hinzufügen */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -16,7 +16,29 @@ body, html {
     position: relative;
 }
 
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-image{
+    max-width: 10px;
+    max-height: 10px;
+}
+
+
 .centered-nav {
+    margin-left: 200px;
     text-align: center;
 }
 
@@ -33,7 +55,7 @@ body, html {
 .centered-nav ul li a {
     display: inline-block;
     padding: 20px 40px;
-    background-color: rgba(0, 0, 0, 0.8); /* Schwarzer Hintergrund mit Transparenz */
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     text-decoration: none;
     font-size: 24px;
@@ -54,6 +76,14 @@ body, html {
     .centered-nav ul li a {
         font-size: 20px;
         padding: 15px 30px;
+    }
+
+    .logo-image{
+        max-width: 100px;
+    }
+
+    .centered-nav{
+        margin-left: 100px;
     }
 }
 
