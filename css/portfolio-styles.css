@@ -55,7 +55,7 @@ body, html {
 .centered-nav ul li a {
     display: inline-block;
     padding: 20px 40px;
-    background-color: rgba(0, 0, 0, 0.8); /* Schwarzer Hintergrund mit Transparenz */
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     text-decoration: none;
     font-size: 24px;
@@ -105,7 +105,7 @@ body, html {
 h1 {
     text-align: center;
     margin-bottom: 50px;
-    color: white; /* Adjust based on background */
+    color: black;
 }
 
 /* The timeline itself */
