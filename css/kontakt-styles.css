@@ -7,7 +7,7 @@ body, html {
 
 /* Background settings */
 .background {
-    background-image: url('/images/background1.jpeg');
+    background-image: url('../images/background1.jpeg');
     background-size: cover;
     background-position: center;
     height: 100vh;
