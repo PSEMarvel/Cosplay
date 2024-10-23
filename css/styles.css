@@ -30,7 +30,7 @@ body {
 }
 
 .logo img {
-    max-width: 200px; /* Increase logo size for desktop */
+    max-width: 300px; /* Increase logo size for desktop */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -51,22 +51,36 @@ body {
 }
 
 .centered-nav a {
-    text-decoration: none; /* Remove underline from links */
-    color: white; /* Link color */
-    font-weight: bold; /* Bold links */
-    font-size: 18px; /* Increase font size for buttons */
-    padding: 10px 15px; /* Add padding for buttons */
-    transition: background-color 0.3s; /* Smooth background transition */
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid white;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 /* Add hover effect for buttons */
 .centered-nav a:hover {
     background-color: rgba(255, 255, 255, 0.5); /* Light background on hover */
+    color: black;
     border-radius: 5px; /* Rounded corners for hover effect */
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
+
+    .background {
+        background-image: url('../images/background1.jpeg'); /* Set the background image */
+        background-size: cover; /* Cover the entire background */
+        background-position:  -550px -20px;
+        padding: 20px 0; /* Padding for the top and bottom */
+        min-height: 100vh; /* Ensure it covers full height */
+    }
+
     .nav-container {
         flex-direction: column; /* Stack items vertically */
     }
@@ -74,6 +88,51 @@ body {
     .logo {
         position: static; /* Reset position for mobile */
         margin-bottom: 20px; /* Space below the logo */
+    }
+
+    .logo img {
+        max-width: 500px; /* Increase logo size for desktop */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .centered-nav ul {
+        flex-direction: column; /* Stack links vertically on mobile */
+    }
+
+    .centered-nav li {
+        margin: 20px 0; /* Space between links */
+    }
+
+    .centered-nav a {
+        font-size: 50px; /* Adjust font size for mobile */
+        padding: 8px 12px; /* Adjust padding for mobile buttons */
+    }
+}
+/* Mobile styles */
+
+
+@media (max-width: 768px) {
+
+    .background {
+        background-image: url('../images/background1.jpeg'); /* Set the background image */
+        background-size: cover; /* Cover the entire background */
+        background-position:  -550px -20px;
+        padding: 20px 0; /* Padding for the top and bottom */
+        min-height: 100vh; /* Ensure it covers full height */
+    }
+
+    .nav-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .logo {
+        position: static; /* Reset position for mobile */
+        margin-bottom: 20px; /* Space below the logo */
+    }
+
+    .logo img {
+        max-width: 250px; /* Increase logo size for desktop */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .centered-nav ul {
@@ -85,7 +144,7 @@ body {
     }
 
     .centered-nav a {
-        font-size: 16px; /* Adjust font size for mobile */
+        font-size: 25px; /* Adjust font size for mobile */
         padding: 8px 12px; /* Adjust padding for mobile buttons */
     }
 }
