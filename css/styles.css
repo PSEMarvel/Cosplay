@@ -70,6 +70,43 @@ body {
     border-radius: 5px; /* Rounded corners for hover effect */
 }
 
+@media (max-width: 1202px) {
+
+    .background {
+        background-image: url('../images/background1.jpeg'); /* Set the background image */
+        background-size: cover; /* Cover the entire background */
+        background-position:  -550px -20px;
+        padding: 20px 0; /* Padding for the top and bottom */
+        min-height: 100vh; /* Ensure it covers full height */
+    }
+
+    .nav-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .logo {
+        position: static; /* Reset position for mobile */
+        margin-bottom: 20px; /* Space below the logo */
+    }
+
+    .logo img {
+        max-width: 500px; /* Increase logo size for desktop */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .centered-nav ul {
+        flex-direction: column; /* Stack links vertically on mobile */
+    }
+
+    .centered-nav li {
+        margin: 20px 0; /* Space between links */
+    }
+
+    .centered-nav a {
+        font-size: 50px; /* Adjust font size for mobile */
+        padding: 8px 12px; /* Adjust padding for mobile buttons */
+    }
+}
 
 @media (max-width: 1024px) {
 
