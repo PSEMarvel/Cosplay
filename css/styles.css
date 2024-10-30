@@ -14,40 +14,46 @@ body {
     min-height: 100vh; /* Ensure it covers full height */
 }
 
+
+
+/* Logo styles */
+.logo {
+    position: absolute; /* Position logo absolutely */
+    left: 20px;
+    top: -20px;
+}
+
+.logo img {
+    max-width: 600px; /* Increase logo size for desktop */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation styles */
 .nav-container {
     display: flex;
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
     flex-direction: column; /* Stack items vertically for mobile */
+    height: 100vh; /* Ensure it takes the full height of the viewport */
     position: relative; /* Positioning context for the logo */
 }
 
-/* Logo styles */
-.logo {
-    position: absolute; /* Position logo absolutely */
-    left: 20px; /* Align to the left for desktop */
-    top: -20px;
-}
-
-.logo img {
-    max-width: 300px; /* Increase logo size for desktop */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Navigation styles */
 .centered-nav {
-    margin-top: 20px; /* Space between logo and nav */
+    margin: 0;
+
 }
+
 
 .centered-nav ul {
     list-style-type: none; /* Remove bullet points */
     padding: 0; /* Remove padding */
     display: flex; /* Use flexbox for horizontal alignment */
-    justify-content: center; /* Center navigation links */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
 }
 
 .centered-nav li {
-    margin: 0 25px; /* Increase space between links */
+    margin: 10px 25px; /* Increase space between links */
 }
 
 .centered-nav a {
@@ -115,8 +121,8 @@ body {
     }
 
     .centered-nav a {
-        font-size: 25px; /* Adjust font size for mobile */
-        padding: 8px 12px; /* Adjust padding for mobile buttons */
+        font-size: 22px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
     }
 }
 
@@ -154,8 +160,8 @@ body {
     }
 
     .centered-nav a {
-        font-size: 30px; /* Adjust font size for mobile */
-        padding: 8px 12px; /* Adjust padding for mobile buttons */
+        font-size: 24px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
     }
 }
 
@@ -170,8 +176,8 @@ body {
     }
 
     .centered-nav a {
-        font-size: 35px; /* Adjust font size for mobile */
-        padding: 8px 12px; /* Adjust padding for mobile buttons */
+        font-size: 26px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
     }
 }
 
@@ -185,8 +191,8 @@ body {
     }
 
     .centered-nav a {
-        font-size: 40px; /* Adjust font size for mobile */
-        padding: 8px 12px; /* Adjust padding for mobile buttons */
+        font-size: 28px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
     }
 }
 
@@ -201,12 +207,12 @@ body {
     }
 
     .logo img {
-        max-width: 280px; /* Increase logo size for desktop */
+        max-width: 500px; /* Increase logo size for desktop */
         height: auto; /* Maintain aspect ratio */
     }
 
     .centered-nav a {
-        font-size: 30px; /* Adjust font size for mobile */
-        padding: 8px 12px; /* Adjust padding for mobile buttons */
+        font-size: 24px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
     }
 }
