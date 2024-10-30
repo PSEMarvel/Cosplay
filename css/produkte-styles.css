@@ -1,0 +1,264 @@
+/* styles.css */
+
+/* Reset some basic styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    background-image: url('../images/background1.jpeg'); /* Set the background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    padding: 20px 0; /* Padding for the top and bottom */
+    min-height: 100vh; /* Ensure it covers full height */
+}
+
+
+
+/* Logo styles */
+.logo {
+    position: absolute; /* Position logo absolutely */
+    left: 20px;
+    top: -20px;
+}
+
+.logo img {
+    max-width: 600px; /* Increase logo size for desktop */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation styles */
+.nav-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Stack items vertically for mobile */
+    height: 100vh; /* Ensure it takes the full height of the viewport */
+    position: relative; /* Positioning context for the logo */
+}
+
+.centered-nav {
+    margin: 0;
+
+}
+
+
+.centered-nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+}
+
+.centered-nav li {
+    margin: 10px 25px; /* Increase space between links */
+}
+
+.centered-nav a {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid white;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect for buttons */
+.centered-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Light background on hover */
+    color: black;
+    border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+
+/* Carousel styles */
+.carousel {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+
+
+
+
+
+
+.wrapper {
+    max-width: 3000px; /* Maximale Breite des Inhalts */
+    margin: 0 auto; /* Zentriert den Wrapper */
+    width: 100%; /* Passt sich an die Bildschirmbreite an */
+}
+
+
+
+
+
+/*
+@media only screen and (max-width: 600px) and (orientation: landscape/ portrait){
+    .wrapper {
+        width: 100%;
+    }
+}*/
+
+@media only screen and (max-width: 600px){
+    .wrapper {
+        width: 100%;
+    }
+
+    .background {
+        background-position:  center right;
+    }
+
+    .nav-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .logo {
+        position: static; /* Reset position for mobile */
+        margin-bottom: 20px; /* Space below the logo */
+    }
+
+    .logo img {
+        max-width: 250px; /* Increase logo size for desktop */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .centered-nav ul {
+        flex-direction: column; /* Stack links vertically on mobile */
+    }
+
+
+    .centered-nav li {
+        margin: 10px 0; /* Space between links */
+    }
+
+    .centered-nav a {
+        font-size: 22px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .background {
+        background-position:  center right;
+    }
+
+    .nav-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .logo {
+        position: static; /* Reset position for mobile */
+        margin-bottom: 20px; /* Space below the logo */
+    }
+
+    .logo img {
+        max-width: 300px; /* Increase logo size for desktop */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .centered-nav ul {
+        flex-direction: column; /* Stack links vertically on mobile */
+    }
+
+
+    .centered-nav li {
+        margin: 10px 0; /* Space between links */
+    }
+
+    .centered-nav a {
+        font-size: 24px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
+    }
+}
+
+@media only screen and (min-width: 786px) and (max-width: 1199px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .logo img {
+        max-width: 350px; /* Increase logo size for desktop */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .centered-nav a {
+        font-size: 26px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .wrapper{
+        width: 100%;
+    }
+    .logo img {
+        max-width: 400px; /* Increase logo size for desktop */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .centered-nav a {
+        font-size: 28px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px){
+    .wrapper{
+        width: 100%;
+    }
+    .logo {
+        position: absolute; /* Position logo absolutely */
+        left: 20px; /* Align to the left for desktop */
+        top: -20px;
+    }
+
+    .logo img {
+        max-width: 500px; /* Increase logo size for desktop */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .centered-nav a {
+        font-size: 24px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
+    }
+}

@@ -5,21 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produkte</title>
     <link rel="icon" href="../images/logo.png" type="image/png" sizes="32x32">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/produkte-styles.css">
 
 </head>
 <body>
-<div class="background">
-    <div class="logo">
-        <img src="images/logo.png" alt="logo-image">
+<div class="wrapper">
+    <div class="background">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo-image">
+            </div>
+            <nav class="centered-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produkte.html">Produkte</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="carousel">
+                <img id="carousel-image" src="images/Produkte/3D%20gedruckte%20Props/IMG_7388.PNG" alt="Carousel Image">
+                <button id="prev" class="nav-button">&larr;</button>
+                <button id="next" class="nav-button">&rarr;</button>
+            </div>
+
+            <script src="script.js"></script>
+        </div>
     </div>
-    <nav class="centered-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
 </div>
 </body>
 </html>
