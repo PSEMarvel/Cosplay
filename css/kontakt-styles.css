@@ -217,7 +217,7 @@ button:hover {
     }
 
     .contact-container {
-        max-width: 400px; /* Sets maximum width */
+        max-width: 300px; /* Sets maximum width */
         margin-top: 300px; /* Adds space above the contact section */
         text-align: center; /* Centers text */
         background-color: rgba(255, 255, 255, 0.8); /* Sets background color with transparency */
@@ -232,8 +232,8 @@ button:hover {
 
     /* Profile picture styles */
     .profile-picture {
-        width: 350px; /* Sets width for the profile picture */
-        height: 350px; /* Sets height for the profile picture */
+        width: 300px; /* Sets width for the profile picture */
+        height: 300px; /* Sets height for the profile picture */
         object-fit: cover; /* Ensures the image covers the area without distortion */
         object-position: center top; /* Positions image within the area */
         border-radius: 70%; /* Makes the picture circular */
@@ -242,7 +242,7 @@ button:hover {
     }
 
     .names {
-        font-size: 40px; /* Sets font size for names */
+        font-size: 35px; /* Sets font size for names */
         margin-top: 10px; /* Adds space above names */
         color: #333; /* Sets text color to dark gray */
     }
@@ -329,7 +329,7 @@ button:hover {
     }
 
     .contact-container {
-        max-width: 400px; /* Sets maximum width */
+        max-width: 350px; /* Sets maximum width */
         margin-top: 0; /* Adds space above the contact section */
         text-align: center; /* Centers text */
         background-color: rgba(255, 255, 255, 0.8); /* Sets background color with transparency */
