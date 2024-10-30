@@ -71,7 +71,7 @@ body {
 }
 
 .wrapper {
-    max-width: 2000px; /* Maximale Breite des Inhalts */
+    max-width: 3000px; /* Maximale Breite des Inhalts */
     margin: 0 auto; /* Zentriert den Wrapper */
     width: 100%; /* Passt sich an die Bildschirmbreite an */
 }
@@ -121,9 +121,7 @@ body {
 }
 
 
-
-
-@media only screen and (min-width: 601px){
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
     .wrapper {
         width: 100%;
     }
@@ -161,7 +159,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 786px){
+@media only screen and (min-width: 786px) and (max-width: 1199px) {
     .wrapper {
         width: 100%;
     }
@@ -177,7 +175,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .wrapper{
         width: 100%;
     }
@@ -192,17 +190,23 @@ body {
     }
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) and (max-width: 1300px){
     .wrapper{
         width: 100%;
     }
+    .logo {
+        position: absolute; /* Position logo absolutely */
+        left: 20px; /* Align to the left for desktop */
+        top: -20px;
+    }
+
     .logo img {
-        max-width: 450px; /* Increase logo size for desktop */
+        max-width: 280px; /* Increase logo size for desktop */
         height: auto; /* Maintain aspect ratio */
     }
 
     .centered-nav a {
-        font-size: 45px; /* Adjust font size for mobile */
+        font-size: 30px; /* Adjust font size for mobile */
         padding: 8px 12px; /* Adjust padding for mobile buttons */
     }
 }
