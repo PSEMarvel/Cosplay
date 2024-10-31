@@ -208,20 +208,20 @@ button:hover {
 
     .logo {
         position: static; /* Reset position for mobile */
-        margin-top: 100px; /* Space below the logo */
+        margin-top: 280px; /* Space below the logo */
     }
 
     .logo img {
-        max-width: 600px; /* Increase logo size for desktop */
+        max-width: 300px; /* Increase logo size for desktop */
         height: auto; /* Maintain aspect ratio */
     }
 
     .contact-container {
-        max-width: 300px; /* Sets maximum width */
-        margin-top: 300px; /* Adds space above the contact section */
+        max-width: 200px; /* Sets maximum width */
+        margin-top: 20px; /* Adds space above the contact section */
         text-align: center; /* Centers text */
         background-color: rgba(255, 255, 255, 0.8); /* Sets background color with transparency */
-        padding: 100px; /* Adds padding inside the container */
+        padding: 50px; /* Adds padding inside the container */
         border-radius: 10px; /* Rounds corners of the container */
     }
 
@@ -232,17 +232,17 @@ button:hover {
 
     /* Profile picture styles */
     .profile-picture {
-        width: 300px; /* Sets width for the profile picture */
-        height: 300px; /* Sets height for the profile picture */
+        width: 150px; /* Sets width for the profile picture */
+        height: 150px; /* Sets height for the profile picture */
         object-fit: cover; /* Ensures the image covers the area without distortion */
         object-position: center top; /* Positions image within the area */
         border-radius: 70%; /* Makes the picture circular */
         border: 4px solid #ccc; /* Adds a light gray border */
-        margin-top: 20px; /* Adds space above the profile picture */
+        margin-top: 0; /* Adds space above the profile picture */
     }
 
     .names {
-        font-size: 35px; /* Sets font size for names */
+        font-size: 25px; /* Sets font size for names */
         margin-top: 10px; /* Adds space above names */
         color: #333; /* Sets text color to dark gray */
     }
@@ -254,8 +254,8 @@ button:hover {
 
     /* Social media icon styles */
     .social-icon {
-        width: 100px; /* Sets width for social icons */
-        height: 100px; /* Sets height for social icons */
+        width: 50px; /* Sets width for social icons */
+        height: 50px; /* Sets height for social icons */
         margin: 0 15px; /* Adds horizontal margin */
         transition: transform 0.3s ease; /* Smooth transition for scaling on hover */
         font-size: inherit; /* Inherits font size from parent */
@@ -267,13 +267,13 @@ button:hover {
     }
 
     h3 {
-        font-size: 40px; /* Sets font size for headings */
+        font-size: 20px; /* Sets font size for headings */
         color: #333; /* Sets text color to dark gray */
     }
 
     button {
         padding: 20px 40px; /* Adds padding inside button */
-        font-size: 25px; /* Sets font size */
+        font-size: 18px; /* Sets font size */
         background-color: #333; /* Sets background color to dark gray */
         color: white; /* Sets text color to white */
         border: none; /* Removes default border */
@@ -283,13 +283,15 @@ button:hover {
 
     .centered-nav ul {
         display: flex; /* Use flexbox for horizontal alignment */
+        flex-direction: column;
+        align-items: center;
         justify-content: center; /* Center the items horizontally */
         padding: 0;
         list-style-type: none;
     }
 
     .centered-nav ul li {
-        margin: 0 10px; /* Adjust margin between items */
+        margin: 10px 10px; /* Adjust margin between items */
     }
 
     .centered-nav ul li a {
