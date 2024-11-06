@@ -6,14 +6,11 @@ body, html {
 }
 
 .background {
-    background-image: url('../images/background1.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    background-image: url('../images/background1.jpeg'); /* Set the background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    padding: 20px 0; /* Padding for the top and bottom */
+    min-height: 100vh; /* Ensure it covers full height */
 }
 
 .nav-container{
@@ -26,30 +23,40 @@ body, html {
 
 .logo{
     position: absolute;
-    left: 50px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 20px;
+    top: -20px;
 }
 
 .logo-image{
-    max-width: 10px;
-    max-height: 10px;
+    max-width: 600px;
+    height: auto;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Stack items vertically for mobile */
+    height: 100vh; /* Ensure it takes the full height of the viewport */
+    position: relative; /* Positioning context for the logo */
+}
 
 .centered-nav {
-    margin-left: 200px;
-    text-align: center;
+    margin: 0;
 }
 
 .centered-nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
 }
 
-.centered-nav ul li {
-    margin: 20px 0;
+.centered-nav li {
+    margin: 10px 25px; /* Increase space between links */
 }
+
 
 /* Button-Styling */
 .centered-nav ul li a {
@@ -67,29 +74,31 @@ body, html {
     transition: background-color 0.3s ease;
 }
 
-/* Hover-Effekt */
-.centered-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+.centered-nav a {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid white;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect for buttons */
+.centered-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Light background on hover */
     color: black;
+    border-radius: 5px; /* Rounded corners for hover effect */
 }
 
-/* Responsive Anpassung */
-@media (max-width: 768px) {
-    .centered-nav ul li a {
-        font-size: 20px;
-        padding: 15px 30px;
-    }
-
-    .logo-image{
-        max-width: 100px;
-    }
-
-    .centered-nav{
-        margin-left: 100px;
-    }
+.wrapper {
+    max-width: 3000px; /* Maximale Breite des Inhalts */
+    margin: 0 auto; /* Zentriert den Wrapper */
+    width: 100%; /* Passt sich an die Bildschirmbreite an */
 }
-
-
 
 * {
     margin: 0;
@@ -120,9 +129,11 @@ h1 {
 /* Each event in the timeline */
 .timeline-event {
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     margin-bottom: 50px;
     position: relative;
+    padding-left: 200px; /* Platz für die Linie und den Punkt */
 }
 
 /* Date part of the timeline event */
@@ -203,54 +214,206 @@ h1 {
 }
 
 
-@media (max-width: 768px) {
+    @media only screen and (max-width: 600px){
+        .wrapper {
+            width: 100%;
+        }
+
+        .background {
+            background-position:  center right;
+        }
+
+        .nav-container {
+            flex-direction: column; /* Stack items vertically */
+        }
+
+        .logo {
+            position: static; /* Reset position for mobile */
+            margin-bottom: 20px; /* Space below the logo */
+        }
+
+        .logo img {
+            max-width: 250px; /* Increase logo size for desktop */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .centered-nav ul {
+            flex-direction: column; /* Stack links vertically on mobile */
+        }
+
+
+        .centered-nav li {
+            margin: 10px 0; /* Space between links */
+        }
+
+        .centered-nav a {
+            font-size: 22px; /* Adjust font size for mobile */
+            padding: 20px 40px; /* Adjust padding for mobile buttons */
+        }
+
+        .timeline-container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .timeline-event {
+            flex-direction: column;
+            padding-left: 0;
+        }
+
+        .timeline-date {
+            text-align: center;
+            margin-bottom: 10px;
+            padding-right: 0;
+            width: 100%;
+        }
+
+        .timeline-event::before {
+            left: -16px
+        }
+
+        .timeline-event::after {
+            left: -15px;
+            transform: translateX(-50%);
+        }
+
+        .timeline-content {
+            padding: 15px;
+            font-size: 0.9em;
+        }
+
+        .timeline-images img {
+            max-height: 300px; /* Limit image height */
+        }
+
+    }
+
+@media only screen and (min-width: 601px) and (max-width: 1209px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .background {
+        background-position:  center right;
+    }
+
+    .nav-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .logo {
+        position: static; /* Reset position for mobile */
+        margin-bottom: 20px; /* Space below the logo */
+    }
+
+    .logo img {
+        max-width: 300px; /* Increase logo size for desktop */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .centered-nav ul {
+        flex-direction: column; /* Stack links vertically on mobile */
+    }
+
+
+    .centered-nav li {
+        margin: 10px 0; /* Space between links */
+    }
+
+    .centered-nav a {
+        font-size: 24px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
+    }
+
+    .timeline-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
     .timeline-event {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        padding-left: 0;
     }
 
     .timeline-date {
-        width: 100%;
-        padding-right: 0;
-        margin-bottom: 10px;
         text-align: center;
+        margin-bottom: 10px;
+        padding-right: 0;
+        width: 100%;
     }
 
     .timeline-event::before {
-        display: none;
+        left: -16px
     }
 
     .timeline-event::after {
-        display: none;
+        left: -15px;
+        transform: translateX(-50%);
     }
 
     .timeline-content {
-        width: 100%;
+        padding: 15px;
+        font-size: 0.9em;
     }
 
     .timeline-images img {
-        width: 100%;
-        max-width: none;
-        height: auto;
-    }
-
-    @media only screen and (max-width: 600px){
-
-    }
-
-    @media only screen and (min-width: 601px) and (max-width: 1199px) {
-
-    }
-
-    @media only screen and (min-width: 786px) and (max-width: 1199px) {
-
-    }
-
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
-    }
-    @media only screen and (min-width: 1200px) and (max-width: 1300px){
-
+        max-height: 300px; /* Limit image height */
     }
 }
+
+@media only screen and (min-width: 786px) and (max-width: 1209px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .logo img {
+        max-width: 350px; /* Increase logo size for desktop */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .centered-nav a {
+        font-size: 26px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1209px) {
+    .wrapper{
+        width: 100%;
+    }
+    .logo img {
+        max-width: 400px; /* Increase logo size for desktop */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .centered-nav a {
+        font-size: 28px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
+    }
+}
+
+@media only screen and (min-width: 1210px) and (max-width: 1400px){
+    .wrapper{
+        width: 100%;
+    }
+    .logo {
+        position: absolute; /* Position logo absolutely */
+        left: 20px; /* Align to the left for desktop */
+        top: -20px;
+    }
+
+    .logo img {
+        max-width: 500px; /* Increase logo size for desktop */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .centered-nav a {
+        font-size: 24px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
+    }
+
+    .timeline-images img {
+        max-height: 430px; /* Limit image height */
+    }
+}
+

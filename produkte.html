@@ -10,35 +10,62 @@
 <body>
 <div class="wrapper">
     <div class="background">
-        <div class="logo">
+        <div class="nav-container">
+            <div class="logo">
                 <img src="images/logo.png" alt="logo-image">
+            </div>
+            <nav class="centered-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="centered-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="produkte.html">Produkte</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+    </div>
 
-        <div class="products-container">
-            <div class="product">
-                <img src="images/Produkte/3D%20gedruckte%20Props/IMG_7389.PNG" alt="Produkt 1">
-                <h2 class="product-title">3D gedruckte Props</h2>
-                <p class="product-description">Ebenfalls stellen wir 3D gedruckte Props nach euren Wünschen her..</p>
+    <div class="products-container">
+        <!-- Product 1 Carousel -->
+        <div class="product">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="images/Produkte/3D%20gedruckte%20Props/IMG_7388.PNG" alt="Produkt 1.1">
+                    <img src="images/Produkte/3D%20gedruckte%20Props/IMG_7389.PNG" alt="Produkt 1.2">
+                </div>
+                <button class="carousel-btn prev" onclick="prevSlide(this)">&#10094;</button>
+                <button class="carousel-btn next" onclick="nextSlide(this)">&#10095;</button>
             </div>
-            <div class="product">
-                <img src="images/Produkte/Cosplay%20Candles/IMG_7387.PNG" alt="Produkt 2">
-                <h2 class="product-title">Cosplay Candles</h2>
-                <p class="product-description">Bald sind auch unsere Cosplay-Kerzen verfügbar.</p>
+            <h2 class="product-title">3D gedruckte Props</h2>
+            <p class="product-description">Ebenfalls stellen wir 3D gedruckte Props nach euren Wünschen her.</p>
+        </div>
+
+        <!-- Product 2 Carousel -->
+        <div class="product">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="images/Produkte/Cosplay%20Candles/IMG_7387.PNG" alt="Produkt 2.1">
+                    <!-- Add additional images for Product 2 here if available -->
+                </div>
             </div>
-            <div class="product">
-                <img src="images/Produkte/Custom%20Lithophane%20Lampen/IMG_7391.PNG" alt="Produkt 3">
-                <h2 class="product-title">Custom Lithophane Lampen</h2>
-                <p class="product-description">Wir bieten euch personalisierte Lithophane Lampen mit eurem Wunschbild an..</p>
+            <h2 class="product-title">Cosplay Candles</h2>
+            <p class="product-description">Bald sind auch unsere Cosplay-Kerzen verfügbar.</p>
+        </div>
+
+        <!-- Product 3 Carousel -->
+        <div class="product">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="images/Produkte/Custom%20Lithophane%20Lampen/IMG_7390.PNG" alt="Produkt 3.1">
+                    <img src="images/Produkte/Custom%20Lithophane%20Lampen/IMG_7391.PNG" alt="Produkt 3.2">
+                </div>
+                <button class="carousel-btn prev" onclick="prevSlide(this)">&#10094;</button>
+                <button class="carousel-btn next" onclick="nextSlide(this)">&#10095;</button>
             </div>
+            <h2 class="product-title">Custom Lithophane Lampen</h2>
+            <p class="product-description">Wir bieten euch personalisierte Lithophane Lampen mit eurem Wunschbild an.</p>
         </div>
     </div>
 </div>
+<script src="js/carousel.js"></script>
 </body>
 </html>
