@@ -77,6 +77,37 @@ body {
 }
 
 
+
+/* Style the "Kontaktieren" button */
+.contact-button {
+    background-color: #333;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.contact-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    transform: translateY(-2px); /* Slight hover effect */
+}
+
+
+
+
+
+
+
+
+
+
 .products-container {
     display: flex;
     flex-wrap: wrap;
@@ -238,7 +269,7 @@ body {
 }
 
 
-@media only screen and (min-width: 601px) and (max-width: 1199px) {
+@media only screen and (min-width: 601px) and (max-width: 1980px) {
     .wrapper {
         width: 100%;
     }
@@ -344,5 +375,33 @@ body {
     .centered-nav a {
         font-size: 24px; /* Adjust font size for mobile */
         padding: 20px 40px; /* Adjust padding for mobile buttons */
+    }
+}
+@media only screen and (min-width: 1301px) and (max-width: 1965px){
+    .wrapper{
+        width: 100%;
+    }
+    .logo {
+        position: absolute; /* Position logo absolutely */
+        left: 20px; /* Align to the left for desktop */
+        top: -20px;
+    }
+
+    .logo img {
+        max-width: 600px; /* Increase logo size for desktop */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .centered-nav a {
+        font-size: 24px; /* Adjust font size for mobile */
+        padding: 20px 40px; /* Adjust padding for mobile buttons */
+    }
+
+    .product-title {
+        font-size: 1.55em;
+    }
+
+    .product-description {
+        font-size: 1.35em;
     }
 }
