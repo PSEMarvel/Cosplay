@@ -2,7 +2,7 @@
 /* Resets default margin and padding for body and html to ensure full height */
 body{
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Helvetica;
 }
 
 /* Background settings */

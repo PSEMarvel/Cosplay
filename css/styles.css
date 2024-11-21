@@ -3,8 +3,10 @@
 /* Reset some basic styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Helvetica;
 }
+
+
 
 .background {
     background-image: url('../images/background1.jpeg'); /* Set the background image */

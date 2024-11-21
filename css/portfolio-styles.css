@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: Helvetica;
 }
 
 .background {
@@ -209,7 +210,7 @@ h1 {
     width: auto;
     max-width: 100%;
     height: auto;
-    max-height: 550px;
+    max-height: 360px;
     border-radius: 8px;
 }
 
@@ -413,7 +414,7 @@ h1 {
     }
 
     .timeline-images img {
-        max-height: 430px; /* Limit image height */
+        max-height: 330px; /* Limit image height */
     }
 }
 
