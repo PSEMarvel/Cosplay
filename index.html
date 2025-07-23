@@ -3,43 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wartungsarbeiten – Cosplay Portfolio</title>
-    <link rel="icon" href="images/logo.png" type="image/png" sizes="32x32">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+    <title>German Cosplay Couple</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <script>
+        if (document.cookie.indexOf("access_granted=true") === -1) {
+            window.location.href = "maintenance.html";
         }
-        body {
-            background-color: #0d0d0d;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-        img {
-            max-width: 150px;
-            margin-bottom: 30px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
-        }
-        p {
-            font-size: 1.2em;
-            max-width: 500px;
-        }
-    </style>
+    </script>
+
+
+
 </head>
 <body>
-<img src="images/logo.png" alt="Logo">
-<h1>🚧 Wartungsarbeiten</h1>
-<p>Unsere Website wird gerade überarbeitet, um bald in neuem Glanz zu erscheinen.<br>Schau gerne bald wieder vorbei!</p>
+<header class="site-header">
+    <nav class="nav">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="produkte.html">Produkte</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>German Cosplay Couple</h1>
+            <p>Professionelles Cosplay. Kreative Projekte. Mit Herz.</p>
+        </div>
+    </section>
+
+    <section class="intro">
+        <h2>Willkommen auf unserer neuen Website</h2>
+        <p>Wir sind Maurice & Isabell – Cosplayer mit Leidenschaft. Hier findest du unsere besten Projekte, Produkte und Kontaktmöglichkeiten.</p>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2025 German Cosplay Couple</p>
+</footer>
 </body>
 </html>

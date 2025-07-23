@@ -24,7 +24,14 @@
     </div>
 </div>
 
-<div class="timeline-container">
+    <script>
+        if (document.cookie.indexOf("access_granted=true") === -1) {
+            window.location.href = "maintenance.html";
+        }
+    </script>
+
+
+    <div class="timeline-container">
     <h1>Portfolio Timeline</h1>
     <div class="timeline">
 
@@ -376,10 +383,6 @@
 
     </div>
 </div>
-    <script>
-        window.location.href = "index.html";
-    </script>
-
 </div>
 </body>
 </html>
