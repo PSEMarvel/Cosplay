@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wartungsarbeiten – Cosplay Portfolio</title>
-    <link rel="icon" href="images/logo.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="images/logo.png" type="image/png" sizes="32x32">
     <style>
         * {
             margin: 0;
@@ -34,37 +34,12 @@
         p {
             font-size: 1.2em;
             max-width: 500px;
-            margin-bottom: 20px;
-        }
-        input {
-            padding: 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            text-align: center;
         }
     </style>
 </head>
 <body>
-<img src="images/logo.png" alt="Logo" />
+<img src="images/logo.png" alt="Logo">
 <h1>🚧 Wartungsarbeiten</h1>
-<p>Unsere Website wird gerade überarbeitet.<br>Gib das Passwort ein, um fortzufahren.</p>
-<input type="password" id="password" placeholder="Passwort eingeben" />
-
-<script>
-    const correctPassword = "1";
-
-    document.getElementById("password").addEventListener("keypress", function (e) {
-        if (e.key === "Enter") {
-            if (e.target.value === correctPassword) {
-                document.cookie = "access_granted=true; path=/";
-                window.location.href = "index.html";
-            } else {
-                alert("Falsches Passwort.");
-            }
-        }
-    });
-</script>
+<p>Unsere Website wird gerade überarbeitet, um bald in neuem Glanz zu erscheinen.<br>Schau gerne bald wieder vorbei!</p>
 </body>
 </html>
