@@ -58,6 +58,7 @@
     document.getElementById("password").addEventListener("keypress", function (e) {
         if (e.key === "Enter") {
             if (e.target.value === correctPassword) {
+                document.cookie = "access_granted=true; path=/";
                 window.location.href = "index.html";
             } else {
                 alert("Falsches Passwort.");
