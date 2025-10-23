@@ -1,0 +1,92 @@
+/* Produkte – vereinheitlichtes Design */
+
+.produkte {
+    padding: 40px 20px 80px;
+}
+
+.intro {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    text-align: left;
+}
+
+.intro h2 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+.intro p {
+    color: #444;
+}
+
+/* Grid mit 3 Karten pro Reihe */
+.product-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.product-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-size: 1.4rem;
+    margin: 14px 16px 8px;
+}
+
+.product-card p {
+    color: #555;
+    margin: 0 16px 20px;
+}
+
+/* Kaufanfrage-Button */
+.product-contact {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 14px 26px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #fff;
+    background: #111;
+    text-decoration: none;
+    transition: transform .15s ease, background .2s ease;
+}
+
+.buy-button:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+/* Responsiv */
+@media (max-width: 900px) {
+    .intro h2 { font-size: 1.9rem; }
+    .product-card img { height: 220px; }
+}
+
+@media (max-width: 600px) {
+    .product-card img { height: 200px; }
+}

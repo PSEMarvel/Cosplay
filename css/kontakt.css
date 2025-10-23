@@ -1,0 +1,120 @@
+/* kontakt.css */
+
+.contact {
+    padding: 60px 20px 100px;
+}
+
+.contact-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+/* Linke Spalte */
+.contact-left h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    margin: 0 0 18px;
+    color: #333;
+}
+
+.mail a {
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #111;
+    padding-bottom: 2px;
+    color: #111;
+}
+
+/* Social Icons */
+.socials {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.social-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #111;
+    padding: 6px;
+    transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+    background-color: #111;
+    filter: invert(1);
+}
+
+/* Rechte Spalte */
+.contact-form {
+    display: grid;
+    gap: 14px;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: #333;
+}
+
+.req {
+    font-weight: 400;
+    color: #777;
+    font-size: .9em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #111;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.06);
+}
+
+.contact-form button {
+    margin-top: 6px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #196b7a;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform .12s ease, opacity .2s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-1px);
+    opacity: .95;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .contact-left h1 {
+        font-size: 2.4rem;
+    }
+}

@@ -1,88 +1,64 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produkte</title>
-    <link rel="icon" href="../images/logo.png" type="image/png" sizes="32x32">
-    <link rel="stylesheet" href="css/produkte-styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Produkte – German Cosplay Couple</title>
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/produkte.css" />
 </head>
-
-<script>
-    window.location.href = "maintenance.html";
-</script>
-
 <body>
-<div class="wrapper">
-    <div class="background">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="images/logo.png" alt="logo-image">
-            </div>
-            <nav class="centered-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
+
+<header class="site-header">
+    <nav class="nav">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="erscheinungen.html">Erscheinungen</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="produkte.html" aria-current="page">Produkte</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="produkte">
+    <section class="intro">
+        <h2>Unsere Produkte</h2>
+        <p>Hier findest du eine Auswahl unserer handgefertigten Cosplay-Produkte.</p>
+    </section>
+
+    <section class="product-grid">
+        <article class="product-card">
+            <img src="images/Produkte/3D%20gedruckte%20Props/IMG_7388.PNG" alt="3D gedruckte Props">
+            <h3>3D-gedruckte Props</h3>
+            <p>Ebenfalls stellen wir 3D-gedruckte Props nach euren Wünschen her.</p>
+        </article>
+
+        <article class="product-card">
+            <img src="images/Produkte/Cosplay%20Candles/IMG_7387.PNG" alt="Cosplay Candles">
+            <h3>Cosplay Candles</h3>
+            <p>Bald sind auch unsere Cosplay-Kerzen verfügbar.</p>
+        </article>
+
+        <article class="product-card">
+            <img src="images/Produkte/Custom%20Lithophane%20Lampen/IMG_7390.PNG" alt="Custom Lithophane Lampen">
+            <h3>Custom Lithophane-Lampen</h3>
+            <p>Wir bieten personalisierte Lithophane-Lampen mit deinem Wunschbild an.</p>
+        </article>
+    </section>
+
+    <div class="product-contact">
+        <a href="mailto:germancosplaycouple@gmail.com" class="buy-button">Kaufanfrage stellen</a>
     </div>
-    <div class="products-container">
-        <!-- Product 1 Carousel -->
-        <div class="product">
-            <div class="carousel-container">
-                <div class="carousel">
-                    <img src="images/Produkte/3D%20gedruckte%20Props/IMG_7388.PNG" alt="Produkt 1.1">
-                    <img src="images/Produkte/3D%20gedruckte%20Props/IMG_7389.PNG" alt="Produkt 1.2">
-                </div>
-                <button class="carousel-btn prev" onclick="prevSlide(this)">&#10094;</button>
-                <button class="carousel-btn next" onclick="nextSlide(this)">&#10095;</button>
-            </div>
-            <h2 class="product-title">3D gedruckte Props</h2>
-            <p class="product-description">Ebenfalls stellen wir 3D gedruckte Props nach euren Wünschen her.</p>
-        </div>
+</main>
 
-        <!-- Product 2 Carousel -->
-        <div class="product">
-            <div class="carousel-container">
-                <div class="carousel">
-                    <img src="images/Produkte/Cosplay%20Candles/IMG_7387.PNG" alt="Produkt 2.1">
-                    <!-- Add additional images for Product 2 here if available -->
-                </div>
-            </div>
-            <h2 class="product-title">Cosplay Candles</h2>
-            <p class="product-description">Bald sind auch unsere Cosplay-Kerzen verfügbar.</p>
-        </div>
+<footer class="site-footer">
+    <p>&copy; 2025 German Cosplay Couple</p>
+</footer>
 
-        <!-- Product 3 Carousel -->
-        <div class="product">
-            <div class="carousel-container">
-                <div class="carousel">
-                    <img src="images/Produkte/Custom%20Lithophane%20Lampen/IMG_7390.PNG" alt="Produkt 3.1">
-                    <img src="images/Produkte/Custom%20Lithophane%20Lampen/IMG_7391.PNG" alt="Produkt 3.2">
-                </div>
-                <button class="carousel-btn prev" onclick="prevSlide(this)">&#10094;</button>
-                <button class="carousel-btn next" onclick="nextSlide(this)">&#10095;</button>
-            </div>
-            <h2 class="product-title">Custom Lithophane Lampen</h2>
-            <p class="product-description">Wir bieten euch personalisierte Lithophane Lampen mit eurem Wunschbild an.</p>
-        </div>
-    </div>
-</div>
-
-<div class="email-button-container">
-    <button id="emailButton" class="contact-button">Kaufanfrage</button>
-</div>
-
-
-<!-- Modal Structure -->
-<div id="imageModal" class="modal">
-    <span class="close-btn" id="closeModal">&times;</span>
-    <img class="modal-content" id="modalImage" alt="Enlarged Image">
-</div>
-
-<script src="js/carousel.js"></script>
-<script src="js/model.js"></script>
 </body>
 </html>
